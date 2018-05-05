@@ -1,15 +1,10 @@
 '''
 Compress
 
-Authors: Sarah O'Connor
-         Alexander Ryan
+Authors: Alexander Ryan
 
 This program compresses a text file. The input is a text file
 and the ouput is a compressed version of the text file.
-
-Revision history:
-
-30 Sep 2014: Added comments
 
 '''
 

@@ -7,22 +7,8 @@ This program takes a compressed file and decompresses the file back
 to its original state. The input is any compressed .txt file and the
 output is the .txt in its decompressed normal form.
 
-Compressed contents 
-
-
-Revision history:
-
-25 Sep 2014: Implemented get_header_info function.
-26 Sep 2014: Implemented parse_header function and 
-             get_compressed_body function.
-27 Sep 2014: Implemented decompress_body function.
-28 Sep 2014: Implemented decompress_file function.
-30 Sep 2014: Comments added.
-2  Oct 2014: Ran code through pylint, fixed all warnings.
-
-
 '''
-# Task 2: Get header information
+# Get header information
 def get_header_info(compressed_contents):
     '''
     Retrieves the number of mappings and ngram size from a compressed text file. 
@@ -54,11 +40,10 @@ def get_header_info(compressed_contents):
     return (number_mappings, ngram_size)
 
 
-# Task 3: Parse the header
+# Parse the header
 def parse_header(compressed_contents):
+    
     '''
-    
-    
     Parameters:
     
         compressed_contents: A file that has been compressed 
@@ -84,20 +69,15 @@ def parse_header(compressed_contents):
         index3 += (ngram_size + 1)
     return decode_map
                     
-# Task 4: Get the compressed body
+# Get the compressed body
 def get_compressed_body(compressed_contents):
+    
     '''
-    
-    
     Parameters:
     
         compressed_contents: A file that has been compressed 
         with a particular ngram size, using the function 
         compress_file in the compress.py program.
-    
-    
-    Result:
-    
     
     '''
     number_mappings = get_header_info(compressed_contents)[0]
@@ -108,7 +88,7 @@ def get_compressed_body(compressed_contents):
     return compressed_body
     
 
-# Task 5: Decompress the body
+# Decompress the body
 def decompress_body(decode_map, compressed_body):
     '''
     
@@ -141,7 +121,7 @@ def decompress_body(decode_map, compressed_body):
 
 
 
-# Task 6: Tie it all together
+# Tie it all together
 def decompress_file(in_filename, out_filename):
     
     in_file = open(in_filename)
