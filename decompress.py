@@ -91,8 +91,6 @@ def get_compressed_body(compressed_contents):
 # Decompress the body
 def decompress_body(decode_map, compressed_body):
     '''
-    
-    
     Parameters:
     
         decode_map:

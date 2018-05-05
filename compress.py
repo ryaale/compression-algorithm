@@ -8,8 +8,6 @@ and the ouput is a compressed version of the text file.
 
 '''
 
-VERSION = 1.0
-
 NUM_BYTES = 256
 
 ALL_BYTES = set()
